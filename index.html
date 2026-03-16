@@ -1,19 +1,22 @@
-<html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <h1>Cifrado Cesar</h1>
-  </hehad>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device=width, initial-scale=1.0">
+      <title>Cifrador Cesar</title>
+      <link href="index.css" rel="stylesheet " />
+      <script src="index.js" type="text/javascript" defer></script>
+  </head>
   <body>
-    Esto es el cuerpo del texto
-    <p>Esto es un párrafo</p>
-    
-    <u1>
-      
-      <li>primero</li>
-      <li>segundo</li>
-      <li>tercero</li>
-    </u1>
+       <main>
+           <h1>Cifrador Cesar</h1>
+           <form id="cifrador" autocomplete="off">     autocomplete off es para no hacer historial
+                <input id="input-original" spellcheck="false" placeholder="Ingrese el texto" type="text" name="text">
+           </form>
+           <div id="resultado"></div>
+           <div class="rango">
+               <input id="rango" type="range" value="10" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+           </div>
+       </main>
   </body>
 </html>
