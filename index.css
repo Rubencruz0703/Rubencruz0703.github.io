@@ -106,3 +106,32 @@ output {
 #btn-copiar:active {
     transform: scale(0.98);
 }
+
+/* 1. Estilo base del botón */
+#btn-copiar {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 12px 20px; /* Dale aire por dentro */
+    margin-bottom: 20px; /* Espacio antes del slider */
+    border: none; /* ¡Fuera bordes feos! */
+    border-radius: 8px; /* Bordes redondeados modernos */
+    background-color: #764ba2; /* El morado de tu diseño */
+    color: white; /* Letras blancas para que contrasten */
+    font-size: 1rem; /* Un tamaño de letra legible */
+    font-weight: bold; /* Letras gruesas */
+    cursor: pointer; /* Que el cursor cambie a "manito" al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Una sombra suave para dar profundidad */
+}
+
+/* 2. Efecto al pasar el mouse (hover) */
+#btn-copiar:hover {
+    background-color: #667eea; /* Un tono más claro (azul-morado) */
+    transform: translateY(-2px); /* El botón "flota" un poquito hacia arriba */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* La sombra se hace más grande */
+}
+
+/* 3. Efecto al hacer clic (active) */
+#btn-copiar:active {
+    transform: translateY(0); /* El botón "baja" de nuevo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* La sombra se achica */
+}
